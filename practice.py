@@ -205,3 +205,140 @@ print(f"My name is {name}, I'am {age} years old, Dollar rate in Pakistan is {dol
 
 # x = 13
 # print(x % 5)
+
+# /
+# // => float division
+# x = 11
+# y = 2
+# print(x/y)
+# print(type(x/y))
+# print(x//y)
+# print(type(x//y))
+
+# +=, -=, *=, /=, //= assignment operator
+# x = 20
+# x += 2
+# print(x)
+
+# print(10 > 8)
+# print(10 < 8)
+
+# a = 200
+# b = 33
+
+# if b > a:
+#   print("b is greater than a")
+# else:
+#   print("b is not greater than a")
+
+# comparision operators
+# x = 15
+# y = 15
+# print("x <= y", x <= y)
+# print("x >= y", x >= y)
+
+# x = 0
+# print(bool(x))
+
+# logical operators => and , or
+# a = True
+# b = True
+# c = False
+# d = False
+# print(a and b)  # True
+# print(a or b)  # True
+# print(a or c)  # True
+# print(a and d)  # False
+# print(a and b or c)  # True
+# print(a or b and c)  # True
+
+# def testing():
+#     return True
+
+
+# if testing():
+#     print("YES")
+# else:
+#     print("NO")
+
+# x = 200
+# print(isinstance(x, str))
+
+# if and else
+
+# x = 10
+
+# if x > 10:
+#     print("Yes")
+# else:
+#     print("No")
+
+# if x > 10:
+#     print("Greater")
+# elif x == 10:
+#     print("Equal")
+# else:
+#     print("Less")
+
+# x = "a"
+# if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
+#     print("Its a vowel")
+# else:
+#     print("Its not a vowel")
+# x = -2
+# if x >= 0:
+#     print("Its Positive")
+# else:
+#     print("Its Negative")
+# x = 10
+# if x % 2:
+#     print("Its Odd")
+# else:
+#     print("Its Even")
+
+# value = int(input("Insert your math's Marks: \n"))
+# if value >= 80 and value <= 100:
+#     print("Grade A+")
+# elif value >= 70 and value < 80:
+#     print("Grade A")
+# elif value >= 60 and value < 70:
+#     print("Grade B")
+# elif value >= 50 and value < 60:
+#     print("Grade C")
+# elif value >= 40 and value < 50:
+#     print("Grade D")
+# elif value >= 0 and value < 40:
+#     print("Fail")
+# else:
+#     print("Please insert a valid number!")
+
+# List
+
+# list = ["Waqas", "Altaf"]
+list = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# secondList = ["Papita"]
+# list = list(("Waqas", "Altaf", "Waqas"))
+
+print(list)
+# list.clear()
+# del list
+# list.pop()
+# list.pop(2)
+# list.remove("apple")
+# list.extend(secondList)
+# list.append("Papita")
+# list.insert(1, "Papita")
+# list[1] = "Mango"
+# list[1:5] = ["Papita"]
+# list[1:2] = ["Mango", "Papita"]
+# if "banana" in list:
+#     print("Yes Exist")
+# else:
+#     print("No Exist")
+# print(list[-3:-1])
+# print(list[3:])
+# print(list[:4])
+# print(list[4:6])
+# print(list[-1])
+# print(len(list))
+# print(type(list))
