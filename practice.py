@@ -314,12 +314,10 @@ print(f"My name is {name}, I'am {age} years old, Dollar rate in Pakistan is {dol
 
 # List
 
-# list = ["Waqas", "Altaf"]
-list = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# list = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # secondList = ["Papita"]
 # list = list(("Waqas", "Altaf", "Waqas"))
 
-print(list)
 # list.clear()
 # del list
 # list.pop()
@@ -331,6 +329,7 @@ print(list)
 # list[1] = "Mango"
 # list[1:5] = ["Papita"]
 # list[1:2] = ["Mango", "Papita"]
+# print(list)
 # if "banana" in list:
 #     print("Yes Exist")
 # else:
