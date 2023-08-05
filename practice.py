@@ -314,6 +314,7 @@ print(f"My name is {name}, I'am {age} years old, Dollar rate in Pakistan is {dol
 
 # List
 
+# list = ["Waqas", "Altaf"]
 # list = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # secondList = ["Papita"]
 # list = list(("Waqas", "Altaf", "Waqas"))
@@ -341,3 +342,115 @@ print(f"My name is {name}, I'am {age} years old, Dollar rate in Pakistan is {dol
 # print(list[-1])
 # print(len(list))
 # print(type(list))
+
+# Dictionary | dict
+
+# thisdict = {
+#     "brand": "Ford",
+#     "model": "Mustang",
+#     "year": 1964,
+#     "colors": ["red", "white", "blue"]
+# }
+# secondDict = dict(name="John", age=36, country="Norway")
+
+# print(secondDict)
+# print(thisdict["model"])
+# print(len(thisdict))
+# print(type(thisdict))
+# print(thisdict["colors"][2])
+# print(thisdict.get("colors")[2])
+# print(thisdict.keys())
+# print(thisdict.values())
+# thisdict["Detail"] = "Testing"
+# thisdict["colors"] = ["White"]
+# print(thisdict.items())
+# if "model" in thisdict:
+#   print("Yes, 'model' is one of the keys in the thisdict dictionary")
+# thisdict.update({"year": 2020})
+# thisdict.update({"detail": 2020})
+# print(thisdict | secondDict)
+# thisdict.pop("model")
+# thisdict.popitem()
+# del thisdict["colors"]
+# print(thisdict["colors"])
+# print(thisdict.get("colors", 0))
+# del thisdict
+# thisdict.clear()
+# for x in thisdict:
+#   print(x)
+# for x in thisdict:
+#   print(thisdict[x])
+# for x, y in thisdict.items():
+#   print(x, y)
+# x = thisdict
+# x = thisdict.copy()
+# x = dict(thisdict)
+# print(x)
+
+# dict = {
+#     "name": "Waqas",
+#     "age": 24,
+#     "gender": "male",
+# }
+# dict2 = {
+#     "address": "Bantwa Nagar",
+#     "street": 10,
+#     "house_no": 302,
+# }
+# dict.update({"salary": '$500', "department": "Senior developer",
+#             "joining_date": '10-August-2023'})
+# dict.pop("age")
+# dict.update({"dob": "19-Sep-1998"})
+# del dict["dob"]
+# dict.update({"date_of_birth": "19-Sep-1998"})
+# print(dict)
+# print(dict | dict2)
+
+# for loop
+
+# contacts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for id in contacts:
+#     if id == 3 or id == 4:
+#         continue
+#     if id == 8:
+#         break
+#     print("Contacts", id)
+
+# for x in range(2, 6):
+#   print(x)
+
+# for x in range(7, 49, 7):
+#   print(x)
+# else:
+#   print("Finally finished!")
+
+# adj = ["red", "big", "tasty"]
+# fruits = ["apple", "banana", "cherry"]
+
+# for x in adj:
+#     for y in fruits:
+#         print(x, y)
+
+# fruits = ["apple", "banana", "cherry"]
+# for x in fruits:
+#   if x == "banana":
+#     break
+#   print(x)
+
+# fruits = ["apple", "banana", "cherry"]
+# for x in fruits:
+#   if x == "xyz":
+#     print("availabe")
+#     break
+# else: # yeh us waqt chalta h jub loop complete chal jata h
+#     print("not availabe")
+
+# for x in [0, 1, 2]:
+#     pass
+
+# while loop
+
+# i = 1
+# while i < 6:
+#   print(i)
+#   i += 1
