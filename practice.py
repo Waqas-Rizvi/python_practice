@@ -448,9 +448,130 @@ print(f"My name is {name}, I'am {age} years old, Dollar rate in Pakistan is {dol
 # for x in [0, 1, 2]:
 #     pass
 
+# x = {
+#     "id": 1,
+#     "name": "Waqas"
+# }
+# x = ["Waqas", "Altaf"]
+# for key, val in enumerate(x):
+#     print(key, val)
+
+# x = [
+#     {
+#         "id":1,
+#         "name":"Waqas"
+#     },
+#     {
+#         "id":2,
+#         "name":"Altaf"
+#     },
+# ]
+# for key,val in enumerate(x):
+#     if val.get("name") == "Altaf":
+#         print(val)
+
+# for i in range(1,5):
+#     for j in range(i):
+#         print(j)
+
 # while loop
 
 # i = 1
 # while i < 6:
 #   print(i)
 #   i += 1
+
+# x = 5
+# while x > 0:
+#     print(x)
+#     x -= 1
+
+# user_input = input("Enter a number between 1 and 10 \n")
+# user_input = int(user_input)
+
+# while user_input < 0 or user_input > 10:
+#     user_input = input("Enter a number between 1 and 10 \n")
+#     user_input = int(user_input)
+
+# print("Valid number is", user_input)
+
+# x = 1
+# while x <= 20:
+#     print(x)
+#     x += 1
+
+# index = 0
+x = [1, 2, 3, 4, 5]
+
+# while index < 5:
+#     if len(x) != 0:
+#         x.pop()
+#     print(x)
+#     index += 1
+
+# print(x)
+# while len(x) > 0:
+#     x.pop()
+#     print(x)
+
+# print("Empty Array!")
+
+# Functions
+
+# def my_function(age = 20):
+#   print(f"My age is {age}")
+
+# my_function()
+# my_function(22)
+
+# def math(x):
+#     return x * 2
+# print(math(10))
+
+# def empty():
+#     pass
+
+# def tri_recursion(k):
+#     if (k > 0):
+#         result = k + tri_recursion(k - 1)
+#         print("first", result, k)
+#     else:
+#         result = 0
+#     return result
+
+# print("\n\nRecursion Example Results")
+# tri_recursion(8)
+
+
+# def x(a, b=4): return a + b
+
+
+# print(x(5))
+
+# x = [
+#     {
+#         "id": 1,
+#         "name": "Waqas",
+#         "age": 12
+#     },
+#     {
+#         "id": 2,
+#         "name": "Saad",
+#         "age": 15
+#     },
+#     {
+#         "id": 3,
+#         "name": "Hamza",
+#         "age": 20
+#     },
+# ]
+
+
+# def my_function(id):
+#     for i in x:
+#         if i.get("id") == id:
+#             return i
+
+
+# z = my_function(3)
+# print(z)
