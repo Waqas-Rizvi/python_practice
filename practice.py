@@ -575,3 +575,79 @@ x = [1, 2, 3, 4, 5]
 
 # z = my_function(3)
 # print(z)
+
+# file handling
+
+# x = open("file1.txt","r")
+# r = x.read()
+# r = x.readlines()
+# r = x.readline()
+# print(r)
+
+# x = open("file2.txt","w")
+# x.write("Hassan")
+
+# x = open("file2.txt","a")
+# x.write("\nAltaf")
+
+# x = open("file1.txt","r")
+# y = x.read().replace("**name**","Hassan")
+# print(y)
+
+# f = open("file2.txt", "r")
+# for x in f:
+#   print(x)
+
+# x = open("file2.txt",'w+')
+# x.write("Waqas")
+# x.seek(0)
+# y = x.read()
+# print(y)
+
+# x = open("file2.txt",'w')
+# x.write("Waqas")
+# x.close()
+
+# r = open("file2.txt",'r')
+# y = r.read()
+# print(y)
+
+# import os
+
+# current = os.getcwd()
+# list = os.listdir()
+# join = os.path.join("folder1","folder1","folder1",'main.py')
+# join = os.path.join("..","Python Class.txt")
+# read = open(join,"r")
+# print(read.read())
+# print(current)
+# print(list)
+# print(join)
+# print(__file__)
+# join = os.path.join(current)
+# print(join, "/..", sep="")
+# list = os.path.abspath(join)
+# print(list)
+
+# os.remove("file2.txt")
+
+# if os.path.exists("file2.txt"):
+#     print("File exists")
+# else:
+#     print("File not exists")
+
+# os.rmdir("text")
+
+# import time
+
+# x = open("file2,txt","w")
+
+# for i in range(1,60):
+#     print("Write line",i)
+#     x.write("line" + str(i)  + '\n')
+#     if i % 10 == 0:
+#         print("flushed")
+#         x.flush()
+#     time.sleep(1)
+
+# x.close()
