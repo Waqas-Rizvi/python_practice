@@ -501,6 +501,9 @@ print(f"My name is {name}, I'am {age} years old, Dollar rate in Pakistan is {dol
 #     x += 1
 
 # index = 0
+import pytz
+import calendar
+from datetime import datetime, date, time
 x = [1, 2, 3, 4, 5]
 
 # while index < 5:
@@ -651,3 +654,155 @@ x = [1, 2, 3, 4, 5]
 #     time.sleep(1)
 
 # x.close()
+
+# date handling
+
+# play with current dtet and time
+# current_date = date.today()
+# current_date_time = datetime.now()
+# print(current_date_time)
+# print(current_date.year)
+# print(current_date.month)
+# print(current_date.day)
+
+# create date tune from integer or from strin
+
+# my_day = 26
+# my_month = 8
+# my_year = 2023
+
+# d = date(year=my_year, month=my_month, day=my_day)
+# ye run hoga q k named argument die hain.
+# print(d)
+# print(d.year)
+
+# dt = "2023-08-26" # ISO 8601 format
+# dt ="26-08-2023" # Valid date but not ISO 8601 format
+# print(dt.year) # yeh nai chalega q k string form main dia hua hai, sirf year ko print nai karega.
+
+# dt_iso = "2023-08-26"  # ISO 8601 format
+# dt_obj = date.fromisoformat(dt_iso)
+# yeh date string se object ban gaya hai fromisoformat use krne pr
+# print(dt_obj.year)
+
+# valid isoformat
+# datetime_str = "2023-08-26 10:54:00"
+# dt_obj = datetime.fromisoformat(datetime_str)
+# print(dt_obj.hour)
+# print(dt_obj.timestamp())
+# timestamp ko use islie krte hain q k yeh utc time deta hai.
+# yeh timestamp() ka fuction 1st Jan 1970 se start hai, ye is se pehle ki date nai dega aur 19 Jan 2038 k aage ki date dene pr program crash krjata hai.
+# ts = 1693029240
+
+# ts_date = datetime.fromtimestamp(ts)
+# print(ts_date.year)
+# agar date string main pass nai horahi to object banane k lie thori mehnat lagegi.
+
+# dt_pk = "26-08-2023"
+# dt_usa = "08/26/2023"
+# invalid_dt = "2023/-08-/26"
+# dt_iso = "2023-08-26"
+
+# dt_new = datetime.strptime(
+#     dt_pk,
+#     "%d-%m-%Y"
+# )
+# print(dt_new)
+
+# dt_new = datetime.strptime(
+#     dt_usa,
+#     "%m/%d/%Y"
+# )
+# print(dt_new)
+
+# dt_new = datetime.strptime(
+#     invalid_dt,
+#     "%Y/-%m-- /%d"
+# )
+# print(dt_new)
+
+# dt = datetime.now()
+# x = str(dt)
+# print(x)
+
+# iso_dt = datetime.strptime(
+#     x,
+#     "%Y-%m-%d %H:%M:%S.%f"
+# )
+
+
+# Date manipulation
+
+# dt = "2023-01-01 23:59:59"
+# dt_obj = datetime.fromisoformat(dt)
+
+# x = dt_obj.replace(year=2000,month=5,day=10)
+
+# print(dt_obj.year)
+
+# from dateutil import parser
+
+# x = "2023/02/01" # Year/day/month
+# dt_obj = parser.parse(x)
+# print(dt_obj.month)
+
+# date manipulation using timedelta
+
+# from datetime import timedelta
+
+# x = date.today()
+# print(x)
+
+# x = x - timedelta(days=2)
+# print(x)
+
+# x = date.fromisoformat("2023-08-05")
+
+# for i in range(1,10):
+#     # change_dt = x - timedelta(days=i)
+#     change_dt = x.replace(day=(x.day-i))
+#     print(change_dt)
+
+# timedelta(weeks=1)
+
+# calculate difference between dates
+
+# current_date = datetime.now()
+# custom_date = datetime.now()
+
+# custom_date = custom_date.replace(day=2)
+
+# print(custom_date)
+# print(current_date)
+
+# diff = current_date - custom_date
+# print(diff.days)
+
+
+# month_r = calendar.monthrange(
+#     2023, 8
+# )
+
+# print(month_r)
+
+
+# all_tz = pytz.all_timezones
+# current_dt = datetime.now(tz=pytz.timezone("Asia/Karachi"))
+
+# print(len(all_tz))
+# print(all_tz)
+# print(current_dt)
+
+# dt_str = "2023:08:15 00:00:00"
+# dt_obj = datetime.fromisoformat(dt_str)
+# print(dt_obj)
+
+# dt_obj = dt_obj.replace(tzinfo=pytz.timezone("Asia/Karachi"))
+# print(dt_obj)
+
+# tz_detail = pytz.timezone("US/Pacific")
+# dt_str = "2023-08-15 15:50:00"
+# dt_obj = datetime.fromisoformat(dt_str)
+
+# tz_aware_dt = tz_detail.localize(dt_obj)
+# print(tz_aware_dt)
