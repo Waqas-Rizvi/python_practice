@@ -806,3 +806,125 @@ x = [1, 2, 3, 4, 5]
 
 # tz_aware_dt = tz_detail.localize(dt_obj)
 # print(tz_aware_dt)
+
+
+# rest topics
+
+# x = "hello world" # sequence data time
+# chars = x[3:7]
+# print(chars)
+
+# li = [1,2,3,4,5,6,7,8,9,10]
+# print(li[0:5:2])
+# print(li[6:10])
+
+# li = [0,1,2,3,4,5,6,7,8,9]
+# print(li[2:5])
+# print(li[7:10])
+# print(li[1:9:2])
+# print(li[::-1])
+
+# sentence = "This is a sample sentence"
+# print(sentence.split(" "))
+
+# csv_data = "Alice,Bob,Charlie,David"
+# print(csv_data.split(","))
+
+# date_string = "2023-09-01"
+# print(date_string.split("-"))
+
+# multiline_txt = """Line 1
+# Line 2
+# Line 3"""
+# print(multiline_txt.split("\n"))
+
+# url = "https://google.com/path/method"
+# print(url.split("//"))
+
+# words = ["This","is","a","sample"]
+# sentens = " ".join(words)
+# print(sentens)
+
+# names = ["Alice","Bob","Charlie"]
+# nameSen = " ".join(names)
+# print(nameSen)
+
+# date_parts = ["2023","09","01"]
+# nameDate = "-".join(date_parts)
+# print(nameDate)
+
+# numbers = [100,102,103,104]
+# nameNumbers = "/".join(map(str,numbers))
+# print(nameNumbers)
+
+# set_A = {1,2,3,4,5}
+# set_B = {4,5,6,7,8}
+
+# merge = set_A.union(set_B)
+# print(merge)
+
+# merge = set_A.intersection(set_B)
+# print(merge)
+
+# merge = set_A.difference(set_B)
+# print(merge)
+
+# merge = set_A.update(10)
+# print(merge)
+
+# https://github.com/awais705/python_assignments/blob/main/datetime/booking_system.py => booking slot assignment
+
+# immutable woh hota h jis m update krny k baad memory location change hojati h or yeh pass by value h
+# mutable woh hota h jis m update krny k baad memory location change ni hoti or yeh pass by reference h
+
+# pass by value
+# pass by reference
+
+# counter = 0
+
+# def increament():
+#     global counter
+#     counter += 1
+
+# def decreament():
+#     global counter
+#     counter -= 1
+
+# decreament()
+# decreament()
+# decreament()
+# print(counter)
+
+# increament()
+# increament()
+# increament()
+# print(counter)
+
+# topic OOP
+
+# properties
+# methods
+# constructor functions
+
+# class Employee:
+#     def __init__(self, fname, lname, salary):
+#         self.fname = fname
+#         self.lname = lname
+#         self.salary = salary
+
+#     def get_fullname(self):
+#         fullName = self.fname + " " + self.lname
+#         return fullName
+
+#     def get_email(self):
+#         email = self.fname + self.lname + "@gmail.com"
+#         return email.lower()
+
+
+# obj = Employee("Waqas", "Rizvi", "10M")
+# print(obj.get_fullname())
+# print(obj.get_email())
+
+# obj1 = Employee("Bilal", "Yousuf", "11M")
+# print(obj1.get_fullname())
+# print(obj1.get_email())
